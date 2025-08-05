@@ -1,0 +1,19 @@
+# Virtual Cochlea Dynamic Simulation Configuration
+input: ' '                     # Input directory
+output: './houtput'            # Output directory
+center_location: 6             # Center location in [mm]
+model_length: 12               # Length of modeled piece in [mm]
+freq: 1                        # Stim freq range [f1, f2] in [kHz] (can be array)
+num_of_freqs: 0                # Number of frequencies [0: only input]
+cycles: 15                     # Number of cycles
+SPL: 40                        # Stim pressure level in [dB SPL]
+permeation_coef: [1e3, 1]      # Permeation coefficients [Alpha, Beta]
+stim_protocol: 0               # Stimulation protocol [0:Pure tone, 1:Multi tone]
+fluid_Corti: 1                 # Corti fluid [1:On, 0:Off]
+sensitive_cochlea: 1           # Sensitive cochlea [1:On, 0:Off]
+nonlin: 0                      # Nonlinearity [1:On, 0:Off]
+stim_current: 0.1              # Stim current level in [mA]
+stim_type: 'random'            # Stimulation type ['tone', 'random']
+log: false                     # Enable logging
+plot: false                    # Enable plotting
+save: false                    # Enable saving results
